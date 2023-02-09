@@ -10,13 +10,7 @@
         }, 1);
     };
     spinner();
-
-    /**
- * Initiate glightbox
- */
-    const glightbox = GLightbox({
-        selector: '.glightbox'
-    });
+   
 
 
     // Initiate the wowjs
@@ -67,6 +61,15 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
+
+
+        /**
+ * Initiate glightbox
+ */ 
+
+        const glightbox = GLightbox({
+            selector: '.glightbox'
+        });
 
 
 })(jQuery);
