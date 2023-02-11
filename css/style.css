@@ -143,7 +143,7 @@
     background-color: var(--primary);
 }
 
-.right-logo {
+.rightLogo {
     width: 130px;
     height: 110px;
     top: 0;
@@ -788,7 +788,7 @@
     color: var(--secondary);
 }
 
-.whatsapp-icon {
+.whatsappIcon {
     position: fixed;
     display: none;
     right: 30px;
@@ -798,7 +798,7 @@
     color: white;
 }
 
-.phone-icon {
+.phoneIcon {
     background-color:#28D146;
     color: white;
     position: fixed;
