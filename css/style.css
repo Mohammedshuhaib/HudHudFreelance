@@ -6,6 +6,17 @@
     --dark: #15233C;
 }
 
+.right-logo {
+    width: 130px;
+    height: 110px;
+    top: 0;
+    right: 0;
+    margin-right: -25px;
+    margin-top: -10px;
+    /* background-color: blue; */
+
+}
+
 .whatsapp-icon {
     position: fixed;
     display: none;
@@ -164,16 +175,7 @@
     background-color: var(--primary);
 }
 
-.right-logo {
-    width: 130px;
-    height: 110px;
-    top: 0;
-    right: 0;
-    margin-right: -25px;
-    margin-top: -10px;
-    /* background-color: blue; */
 
-}
 
 /*** Header ***/
 .carousel-caption {
