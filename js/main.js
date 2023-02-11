@@ -78,6 +78,14 @@ function redirectToCategory() {
     window.location.href = "/category.html"
 }
 
+function goToPhone() {
+    window.open('tel:+971559305556')
+}
+
+function goToWhatsapp() {
+    window.open("//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=Can you explain about your services")
+}
+
 
 
 
