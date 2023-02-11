@@ -120,7 +120,9 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand img {
-        max-height: 45px;
+        height: 35px;
+        width: 180px;
+
     }
 
     .navbar .navbar-nav {
@@ -153,6 +155,18 @@
     }
 }
 
+.top-container {
+    background-color: var(--primary);
+}
+
+.right-logo {
+    width: 150px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    margin-right: -50px;
+    margin-top: -10px;
+}
 
 /*** Header ***/
 .carousel-caption {
@@ -255,7 +269,7 @@
 }
 
 .container.facts .facts-text {
-    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/carousel-1.jpg) center right no-repeat;
+    background: linear-gradient(#37c6f5, #37c6f5), url(../img/carousel-1.jpg) center right no-repeat;
     background-size: cover;
 }
 
@@ -739,6 +753,7 @@
 .footer {
     color: #A7A8B4;
 }
+
 
 .footer .btn.btn-link {
     display: block;

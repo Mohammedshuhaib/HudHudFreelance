@@ -87,5 +87,20 @@ function goToWhatsapp() {
 }
 
 
+function sendMail() {
+    console.log('call came')
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "hudhudad2010@gmail.com",
+      Password: "A1B0311AF901383BC89196957CFD7A03A77B",
+      From: document.getElementById("email").value,
+      To: 'hudhudad2010@gmail.com',
+      Subject: document.getElementById("subject").value,
+      Body: `Hi iam ${document.getElementById('name').value} , ${document.getElementById('message').value}`
+    }).then(
+      message => alert(message)
+    );
+  }
+
 
 
