@@ -143,6 +143,16 @@
     background-color: var(--primary);
 }
 
+.right-logo {
+    width: 130px;
+    height: 110px;
+    top: 0;
+    right: 0;
+    margin-right: -25px;
+    margin-top: -10px;
+    /* background-color: blue; */
+}
+
 
 
 /*** Header ***/
@@ -778,21 +788,6 @@
     color: var(--secondary);
 }
 
-.footer .copyright a:hover {
-    color: #FFFFFF;
-}
-
-.right-logo {
-    width: 130px;
-    height: 110px;
-    top: 0;
-    right: 0;
-    margin-right: -25px;
-    margin-top: -10px;
-    /* background-color: blue; */
-
-}
-
 .whatsapp-icon {
     position: fixed;
     display: none;
@@ -812,3 +807,9 @@
     bottom: 30px;
     z-index: 99;
 }
+
+
+.footer .copyright a:hover {
+    color: #FFFFFF;
+}
+
