@@ -12,6 +12,8 @@
     right: 30px;
     bottom: 30px;
     z-index: 99;
+    background-color: 	 #28D146;
+    color: white;
 }
 
 .phone-icon {
@@ -20,6 +22,8 @@
     left: 30px;
     bottom: 30px;
     z-index: 99;
+    background-color:  #28D146;
+    color: white;
 }
 
 
