@@ -131,4 +131,9 @@ function sendMail() {
     })
 }
 
+function orderItem(ItemName) {
+    console.log(ItemName)
+    window.open(`//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=I need a ${ItemName}, Can i get the details?`)
+}
+
 
