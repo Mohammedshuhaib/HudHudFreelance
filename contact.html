@@ -24,6 +24,7 @@
   <!-- Libraries Stylesheet -->
   <link href="lib/animate/animate.min.css" rel="stylesheet" />
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="sweetalert2.min.css">
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -137,26 +138,26 @@
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required />
                   <label for="name">Your Name</label>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required />
                   <label for="email">Your Email</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="subject" placeholder="Subject" />
+                  <input type="text" class="form-control" id="subject" placeholder="Subject" required />
                   <label for="subject">Subject</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-floating">
                   <textarea class="form-control" placeholder="Leave a message here" id="message"
-                    style="height: 100px"></textarea>
+                    style="height: 100px" required></textarea>
                   <label for="message">Message</label>
                 </div>
               </div>
@@ -274,6 +275,8 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.min.js"></script>
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
 </body>
