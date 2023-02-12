@@ -96,20 +96,40 @@ function sendMail() {
         Host: "smtp.elasticemail.com",
         Username: "hudhudad2010@gmail.com",
         Password: "A1B0311AF901383BC89196957CFD7A03A77B",
+        port: 2525,
         From: document.getElementById("email").value,
         To: 'hudhudad2010@gmail.com',
         Subject: document.getElementById("subject").value,
         Body: `Hi iam ${document.getElementById('name').value} , ${document.getElementById('message').value}`
     }).then((message) => 
     {
-
-        Swal.fire({
-            title: 'Success!',
-            text: 'Thank you for your valuable message',
-            icon: 'success',
-            showConfirmButton: false,
-            timer: 1500
-          })
+        if(message == "OK") {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Thank you for your valuable message',
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        } else {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              
+              Toast.fire({
+                icon: 'error',
+                title: 'Please use your logined google mail'
+              })
+        }
+        
     }
     ).catch((error) => {
         const Toast = Swal.mixin({
