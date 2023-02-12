@@ -325,11 +325,13 @@
 .categoryWrapper .categoryImageWrapper {
     display: flex;
     justify-content: center;
+    
 }
 
 .categoryWrapper .categoryImageWrapper .categoryImage {
     width: 150px;
     height: 150px;
+    box-shadow: -1px -4px 21px -4px rgba(0,0,0,0.75);
 }
 
 .categoryTextWrapper {
