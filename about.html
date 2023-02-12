@@ -24,6 +24,7 @@
   <!-- Libraries Stylesheet -->
   <link href="lib/animate/animate.min.css" rel="stylesheet" />
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -218,6 +219,53 @@
   </div>
   <!-- Facts End -->
 
+  <section id="clients" class="clients mt-4">
+    <div class="container" data-aos="zoom-out">
+      <!-- <h1 class="text-center"><strong>Our Clients
+          </strong></h1>
+      <br> -->
+      <div class="clients-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><img src="img/Customer Logo/Ain-GOld.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Air-Best.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Al-Toki.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Amana.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Asly.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Bait-Al-Masel.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Dubai-KMCC.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Edrees-Medical.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Etihad-Auto.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Fast-Track.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Flexy.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Fyor.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Interscience.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/IVK.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Jay-Express.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Jebel-Jaiz.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/KRS-Cargo.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Maraya.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Markaz.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Marvel.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Mazmo.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Menber.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Naif-Trip.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Nicoli.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Oleander.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Oyster-Bay.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Public-Cook.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Smart-Line.jpg" class="img-fluid" alt=""></div> 
+          <div class="swiper-slide"><img src="img/Customer Logo/Strong-Lite.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Sunni-Centre.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Texube.jpg" class="img-fluid" alt=""></div> 
+          <div class="swiper-slide"><img src="img/Customer Logo/Victory.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="img/Customer Logo/Zahrathul-Quran.jpg" class="img-fluid" alt=""></div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+
   <!-- Team Start -->
   <!-- <div class="container-xxl py-5">
     <div class="container">
@@ -384,9 +432,49 @@
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Javascript -->
+  
   <script src="js/main.js"></script>
+  <script>
+
+    /**
+ * Clients Slider
+ */
+    new Swiper('.clients-slider', {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 60
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 80
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 120
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
