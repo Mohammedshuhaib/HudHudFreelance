@@ -125,7 +125,7 @@ function sendMail() {
               
               Toast.fire({
                 icon: 'error',
-                title: 'Please use your logined google mail'
+                title: `Please login to google first`
               })
         }
         
