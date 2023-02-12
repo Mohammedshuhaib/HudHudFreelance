@@ -77,8 +77,8 @@
 
 
 
-function redirectToCategory() {
-    window.location.href = "/category.html"
+function redirectToCategory(route) {
+    window.location.href = `category.html#${route}`
 }
 
 function goToPhone() {
