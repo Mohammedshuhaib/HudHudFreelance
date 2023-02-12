@@ -91,7 +91,6 @@ function goToWhatsapp() {
 
 
 function sendMail() {
-    console.log('call came')
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "hudhudad2010@gmail.com",
