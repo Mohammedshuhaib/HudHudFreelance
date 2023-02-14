@@ -85,6 +85,10 @@ function goToPhone() {
     window.open('tel:+971559305556')
 }
 
+function goToMail() {
+    window.open("mailto:hudhudad2010@gmail.com")
+}
+
 function goToWhatsapp() {
     window.open("//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=Can you explain about your services")
 }
