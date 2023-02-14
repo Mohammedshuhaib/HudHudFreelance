@@ -91,44 +91,45 @@ function goToWhatsapp() {
 
 
 function sendMail() {
-    fetch("https://voltix-email-service.onrender.com/sendmail", {
-        method: "POST",
-        body: JSON.stringify({
-            from: document.getElementById("email").value,
-            to: 'hudhudad2010@gmail.com',
-            subject: document.getElementById("subject").value,
-            message: `name: ${document.getElementById("name").value}, message: ${document.getElementById("message").value}`
-        }),
-        headers: {
-            "Content-Type": "application/json"
-        }
-    }).then((message) => {
-        Swal.fire({
-            title: 'Success!',
-            text: 'Thank you for your valuable message',
-            icon: 'success',
-            showConfirmButton: false,
-            timer: 1500
+    try {
+        fetch("https://voltix-email-service.onrender.com/sendmail", {
+            method: "POST",
+            body: JSON.stringify({
+                from: document.getElementById("email").value,
+                to: 'hudhudad2010@gmail.com',
+                subject: document.getElementById("subject").value,
+                message: `name: ${document.getElementById("name").value}, message: ${document.getElementById("message").value}`
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
         })
-    })
-        .catch((error) => {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
+            Swal.fire({
+                title: 'Success!',
+                text: 'Thank you for your valuable message',
+                icon: 'success',
                 showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                }
+                timer: 1500
             })
-
-            Toast.fire({
-                icon: 'error',
-                title: 'Please check your email address'
-            })
+    }
+    catch(error) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
         })
+
+        Toast.fire({
+            icon: 'error',
+            title: 'Please check your email address'
+        })
+    }
 }
 
 function orderItem(ItemName) {
