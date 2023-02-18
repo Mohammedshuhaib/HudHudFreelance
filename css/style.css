@@ -186,27 +186,48 @@
 }
 
 .carousel-item img {
-    height: 50rem;
+    height: 40rem;
+
 }
 
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        min-height: 350px;
     }
 
     #header-carousel .carousel-item img {
         position: absolute;
-        width: 100%;
+        width: auto;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
 }
 
 .page-header {
-    background: url(../img/our.jpg) center center no-repeat;
     background-size: cover;
 }
+
+.about-header {
+    background: url(../img/About\ Us.jpg) center center no-repeat;
+}
+
+.service-header {
+    background: url(../img/Services.jpg) center center no-repeat;
+}
+
+.portfolio-header {
+    background: url(../img/Portfolio.jpg) center center no-repeat;
+}
+
+.category-header {
+    background: url(../img/Categories.jpg) center center no-repeat;
+}
+
+.contact-header {
+    background: url(../img/Contact\ Us.jpg) center center no-repeat;
+}
+
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
