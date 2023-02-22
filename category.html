@@ -1,714 +1,1150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AL HUD HUD - best printing company</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>AL HUD HUD - best printing company</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="keywords" />
-  <meta content="" name="description" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
-    rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-  <!-- Libraries Stylesheet -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/Logo Jpeg.jpg" />
+  </head>
 
-  <!-- Template Stylesheet -->
-  <link href="css/style.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="/img/Logo Jpeg.jpg">
-</head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
 
-<body>
-  <!-- Spinner Start -->
-  <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-grow text-primary" role="status"></div>
-  </div>
-  <!-- Spinner End -->
-
-  <!-- Topbar Start -->
-  <div class="container-fluid top-container text-white py-2 px-0 d-none d-lg-block">
-    <div class="row gx-0 align-items-center">
-      <div class="col-lg-7 px-5 text-start">
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="fa fa-phone-alt me-2"></small>
-          <small class="topHeaderCall" onclick="goToPhone()">+971 55 930 55 56</small>
+    <!-- Topbar Start -->
+    <div
+      class="container-fluid top-container text-white py-2 px-0 d-none d-lg-block"
+    >
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-phone-alt me-2"></small>
+            <small class="topHeaderCall" onclick="goToPhone()"
+              >+971 55 930 55 56</small
+            >
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="far fa-envelope-open me-2"></small>
+            <small class="topHeaderCall" onclick="goToMail()"
+              >hudhudad2010@gmail.com</small
+            >
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="far fa-clock me-2"></small>
+            <small>Mon - Sat : 09 AM to 02 PM - 4 PM to 10 PM </small>
+          </div>
         </div>
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="far fa-envelope-open me-2"></small>
-          <small class="topHeaderCall" onclick="goToMail()">hudhudad2010@gmail.com</small>
-        </div>
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="far fa-clock me-2"></small>
-          <small>Mon - Sat : 09 AM to 02 PM - 4 PM to 10 PM </small>
-        </div>
-      </div>
-      <div class="col-lg-5 px-5 text-end">
-        <div class="h-100 d-inline-flex align-items-center">
-          <a class="text-white ms-4" href="https://www.facebook.com/profile.php?id=100064062731948"><i class="fab fa-facebook-f"></i></a>
-          <a class="text-white ms-4" href=""><i class="fab fa-twitter"></i></a>
-          <a class="text-white ms-4" href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"><i class="fab fa-linkedin-in"></i></a>
-          <a class="text-white ms-4" href="https://www.instagram.com/hudhudadvt/?hl=en"><i class="fab fa-instagram"></i></a>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center">
+            <a
+              class="text-white ms-4"
+              href="https://www.facebook.com/profile.php?id=100064062731948"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="text-white ms-4" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="text-white ms-4"
+              href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="text-white ms-4"
+              href="https://www.instagram.com/hudhudadvt/?hl=en"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Topbar End -->
+    <!-- Topbar End -->
 
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4">
-    <a href="index.html" class="navbar-brand d-flex align-items-center">
-
-      <img class="img-fluid me-0" src="img/Web site name.png" alt="" />
-    </a>
-    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-        <a href="index.html" class="nav-item nav-link">Home</a>
-        <a href="about.html" class="nav-item nav-link">About Us</a>
-        <a href="service.html" class="nav-item nav-link">Our Services</a>
-        <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-        <div class="nav-item dropdown">
-          <a href="category.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Category</a>
-          <div class="dropdown-menu bg-light border-0 m-0">
-            <a href="category.html#business" class="dropdown-item">Business Card</a>
-            <a href="category.html#marketing" class="dropdown-item">Marketing Materials</a>
-            <a href="category.html#badge" class="dropdown-item">Signs & Banners</a>
-            <a href="category.html#promotional" class="dropdown-item">Gifts & Decor</a>
-            <a href="category.html#bag" class="dropdown-item">Stationery</a>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img class="img-fluid me-0" src="img/Web site name.png" alt="" />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Our Services</a>
+          <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+          <div class="nav-item dropdown">
+            <a
+              href="category.html"
+              class="nav-link dropdown-toggle active"
+              data-bs-toggle="dropdown"
+              >Category</a
+            >
+            <div class="dropdown-menu bg-light border-0 m-0">
+              <a href="category.html#business" class="dropdown-item"
+                >Business Card</a
+              >
+              <a href="category.html#marketing" class="dropdown-item"
+                >Marketing Materials</a
+              >
+              <a href="category.html#badge" class="dropdown-item"
+                >Signs & Banners</a
+              >
+              <a href="category.html#promotional" class="dropdown-item"
+                >Gifts & Decor</a
+              >
+              <a href="category.html#bag" class="dropdown-item">Stationery</a>
+            </div>
           </div>
+          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
         </div>
-        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+      </div>
+      <img
+        src="img/Web site Color Design.png"
+        class="d-none d-lg-block right-logo"
+      />
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid page-header category-header py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5 text-center">
+        <h1 class="display-4 animated slideInDown mb-4">Category</h1>
       </div>
     </div>
-    <img src="img/Web site Color Design.png" class="d-none d-lg-block right-logo">
-  </nav>
-  <!-- Navbar End -->
+    <!-- Page Header End -->
 
-  <!-- Page Header Start -->
-  <div class="container-fluid page-header category-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5 text-center">
-      <h1 class="display-4 animated slideInDown mb-4">Category</h1>
-      
-    </div>
-  </div>
-  <!-- Page Header End -->
-
-  <!-- Team Start -->
-  <div class="container-xxl py-5">
-    <div class="container" id="business">
-      <div style="max-width: 500px">
-        <h1 class="display-6 mb-5">Business Card</h1>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="team-item rounded">
-            <img class="img-fluid" src="img/Jpeg/Businesscard/Artcard.jpg" alt="" />
-            <div class="text-center p-4">
-              <h5>Art Card</h5>
-              <!-- <span>Designation</span> -->
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container" id="business">
+        <div style="max-width: 500px">
+          <h1 class="display-6 mb-5">Business Card</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded">
+              <img
+                class="img-fluid"
+                src="img/Jpeg/Businesscard/Artcard.jpg"
+                alt=""
+              />
+              <div class="text-center p-4">
+                <h5>Art Card</h5>
+                <!-- <span>Designation</span> -->
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>Art card</h5>
+                <!-- <p>Designation</p> -->
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="categoryButton btn btn-warning"
+                    onclick="orderItem('ART CARD business card')"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="team-text text-center bg-white p-4">
-              <h5>Art card</h5>
-              <!-- <p>Designation</p> -->
-              <div class="d-flex justify-content-center">
-                <button class="categoryButton btn btn-warning" onclick="orderItem('ART CARD business card')">Order
-                  Now</button>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded">
+              <img class="img-fluid" src="img/Jpeg/Businesscard/PVC Card.jpg" />
+              <div class="text-center p-4">
+                <h5>PVC Card</h5>
+                <!-- <span>Designation</span> -->
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>PVC Card</h5>
+                <!-- <p>Designation</p> -->
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="categoryButton btn btn-warning"
+                    onclick="orderItem('PVC CARD business card')"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded">
+              <img
+                class="img-fluid"
+                src="img/Jpeg/Businesscard/UV-Coatedd.jpg"
+                alt=""
+              />
+              <div class="text-center p-4">
+                <h5>UV Coated</h5>
+                <!-- <span>Designation</span> -->
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>UV Coated</h5>
+                <!-- <p>Designation</p> -->
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="categoryButton btn btn-warning"
+                    onclick="orderItem('UV COATED business card')"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded">
+              <img
+                class="img-fluid"
+                src="img/Jpeg/Businesscard/Goldfoil.jpg"
+                alt=""
+              />
+              <div class="text-center p-4">
+                <h5>Gold Foil</h5>
+                <!-- <span>Designation</span> -->
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>Gold Foil</h5>
+                <!-- <p>Designation</p> -->
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="categoryButton btn btn-warning"
+                    onclick="orderItem('GOLD FOIL business card')"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded">
+              <img
+                class="img-fluid"
+                src="img/Jpeg/Businesscard/760-Rounded.jpg"
+                alt=""
+              />
+              <div class="text-center p-4">
+                <h5>760 Mic Card</h5>
+                <!-- <span>Designation</span> -->
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>760 Mic Card</h5>
+                <!-- <p>Designation</p> -->
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="categoryButton btn btn-warning"
+                    onclick="orderItem('760 Mic business card')"
+                  >
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="team-item rounded">
-            <img class="img-fluid" src="img/Jpeg/Businesscard/Artcardd.jpg">
-            <div class="text-center p-4">
-              <h5>PVC Card</h5>
-              <!-- <span>Designation</span> -->
-            </div>
-            <div class="team-text text-center bg-white p-4">
-              <h5>PVC Card</h5>
-              <!-- <p>Designation</p> -->
-              <div class="d-flex justify-content-center">
-                <button class="categoryButton btn btn-warning" onclick="orderItem('PVC CARD business card')">Order
-                  Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="team-item rounded">
-            <img class="img-fluid" src="img/Jpeg/Businesscard/UV-Coatedd.jpg" alt="" />
-            <div class="text-center p-4">
-              <h5>UV Coated </h5>
-              <!-- <span>Designation</span> -->
-            </div>
-            <div class="team-text text-center bg-white p-4">
-              <h5>UV Coated </h5>
-              <!-- <p>Designation</p> -->
-              <div class="d-flex justify-content-center">
-                <button class="categoryButton btn btn-warning" onclick="orderItem('UV COATED business card')">Order
-                  Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="team-item rounded">
-            <img class="img-fluid" src="img/Jpeg/Businesscard/Goldfoil.jpg" alt="" />
-            <div class="text-center p-4">
-              <h5>Gold Foil</h5>
-              <!-- <span>Designation</span> -->
-            </div>
-            <div class="team-text text-center bg-white p-4">
-              <h5>Gold Foil</h5>
-              <!-- <p>Designation</p> -->
-              <div class="d-flex justify-content-center">
-                <button class="categoryButton btn btn-warning" onclick="orderItem('GOLD FOIL business card')">Order
-                  Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="team-item rounded">
-            <img class="img-fluid" src="img/Jpeg/Businesscard/760-Rounded.jpg" alt="" />
-            <div class="text-center p-4">
-              <h5>760 Mic Card</h5>
-              <!-- <span>Designation</span> -->
-            </div>
-            <div class="team-text text-center bg-white p-4">
-              <h5>760 Mic Card</h5>
-              <!-- <p>Designation</p> -->
-              <div class="d-flex justify-content-center">
-                <button class="categoryButton btn btn-warning" onclick="orderItem('760 Mic business card')">Order
-                  Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="text-center mx-auto mt-5" style="max-width: 500px">
+        <div class="team-wrapper" id="ncr">
+        <div style="max-width: 500px">
           <h1 class="display-6 mb-5">NCR Offset Printing</h1>
         </div>
-        <div class="row g-4 d-flex justify-content-center">
+        <div class="row g-4">
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
+              <img class="img-fluid" src="img/Jpeg/NCR Offset Printing/Invoice.jpg" alt="" />
               <div class="text-center p-4">
-                <h5>Tax Invoice</h5> -->
-      <!-- <span>Designation</span> -->
-      <!-- </div>
+                <h5>Tax Invoice</h5>
+        <!-- <span>Designation</span> -->
+        </div>
               <div class="team-text text-center bg-white p-4">
-                <h5>Tax Invoice</h5> -->
-      <!-- <p>Designation</p> -->
-      <!-- <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning">Order Now</button>
+                <h5>Tax Invoice</h5>
+        <!-- <p>Designation</p> -->
+        <div class="d-flex justify-content-center">
+                  <button class="categoryButton btn btn-warning"
+                  onclick="orderItem('Tax Invoice')">Order Now</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
+              <img class="img-fluid" src="img/Jpeg/NCR Offset Printing/ReceiptVoucher.jpg" alt="" />
               <div class="text-center p-4">
-                <h5>Receipt / Payment Voucher</h5> -->
-      <!-- <span>Designation</span> -->
-      <!-- </div> -->
-      <!-- <div class="team-text text-center bg-white p-4">
-                <h5>Receipt / Payment Voucher</h5> -->
-      <!-- <p>Designation</p> -->
-      <!-- <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning">Order Now</button>
+                <h5>Receipt / Payment Voucher</h5>
+        <!-- <span>Designation</span> -->
+        </div>
+        <div class="team-text text-center bg-white p-4">
+                <h5>Receipt / Payment Voucher</h5>
+        <!-- <p>Designation</p> -->
+        <div class="d-flex justify-content-center">
+                  <button class="categoryButton btn btn-warning" onclick="orderItem('Recipt / Payment Voucher')">Order Now</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
+              <img class="img-fluid" src="img/Jpeg/NCR Offset Printing/Computer-Invoice.jpg" alt="" />
               <div class="text-center p-4">
-                <h5>Dot Matrix Invoice (Computer) </h5> -->
-      <!-- <span>Designation</span> -->
-      <!-- </div>
+                <h5>Dot Matrix Invoice (Computer) </h5>
+        <!-- <span>Designation</span> -->
+        </div>
               <div class="team-text text-center bg-white p-4">
-                <h5>Dot Matrix Invoice (Computer) </h5> -->
-      <!-- <p>Designation</p> -->
-      <!-- <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning">Order Now</button>
+                <h5>Dot Matrix Invoice (Computer) </h5>
+        <!-- <p>Designation</p> -->
+        <div class="d-flex justify-content-center">
+                  <button class="categoryButton btn btn-warning" onclick="orderItem('Dot Matrix Invoice')">Order Now</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="text-center mx-auto mt-5" style="max-width: 500px">
+        </div>
+        <div class="team-wrapper" id="sticker">
+        <div  style="max-width: 500px">
           <h1 class="display-6 mb-5">Sticker / Labels</h1>
         </div>
-        <div class="row g-4 d-flex justify-content-center">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>PVC Transparent Sticker ( Rounded Cutt)</h5> -->
-      <!-- <span>Designation</span> -->
-      <!-- </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>PVC Transparent Sticker ( Rounded Cutt)</h5> -->
-      <!-- <p>Designation</p> -->
-      <!-- <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning">Order Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>PVC White Sticker ( Rounded Cutt) </h5> -->
-      <!-- <span>Designation</span> -->
-      <!-- </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>PVC White Sticker ( Rounded Cutt) </h5> -->
-      <!-- <p>Designation</p> -->
-      <!-- <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning">Order Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Security Sticker </h5> -->
-      <!-- <span>Designation</span> -->
-      <!-- </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Security Sticker </h5> -->
-      <!-- <p>Designation</p> -->
-      <!-- <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning">Order Now</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
-      <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Paper Sticker Print with Die Cutt </h5> -->
-      <!-- <span>Designation</span> -->
-      <!-- </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Paper Sticker Print with Die Cutt </h5> -->
-      <!-- <p>Designation</p> -->
-      <!-- <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning">Order Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  -->
-      <div class="team-wrapper" id="promotional">
-        <div style="max-width: 500px">
-          <h1 class="display-6 mb-5">Promotional</h1>
-        </div>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Promotional/Bottilee.jpg" alt="" />
+              <img class="img-fluid" src="img/Jpeg/Sticker & Labels/PVC Transparent Sticker.jpg" alt="" />
               <div class="text-center p-4">
-                <h5>Water Bottle</h5>
-                <!-- <span>Designation</span> -->
-              </div>
+                <h5>PVC Transparent Sticker ( Rounded Cutt)</h5>
+        <!-- <span>Designation</span> -->
+        </div>
               <div class="team-text text-center bg-white p-4">
-                <h5>Water Bottle</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Water bottles')">Order Now</button>
+                <h5>PVC Transparent Sticker ( Rounded Cutt)</h5>
+        <!-- <p>Designation</p> -->
+        <div class="d-flex justify-content-center">
+                  <button class="categoryButton btn btn-warning" 
+                  onclick="orderItem('PVC Transparent sticker')" >Order Now</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Promotional/cap.jpg" alt="" />
+              <img class="img-fluid" src="img/Jpeg/Sticker & Labels/PVC White Sticker.jpg" alt="" />
               <div class="text-center p-4">
-                <h5>Caps</h5>
-                <!-- <span>Designation</span> -->
-              </div>
+                <h5>PVC White Sticker ( Rounded Cutt) </h5>
+        <!-- <span>Designation</span> -->
+        </div>
               <div class="team-text text-center bg-white p-4">
-                <h5>Caps</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Caps')">Order Now</button>
+                <h5>PVC White Sticker ( Rounded Cutt) </h5>
+        <!-- <p>Designation</p> -->
+        <div class="d-flex justify-content-center">
+                  <button class="categoryButton btn btn-warning">Order Now</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Promotional/Key-chain-copy.jpg" alt="" />
+              <img class="img-fluid" src="img/Jpeg/Sticker & Labels/Security Sticker.jpg" alt="" />
               <div class="text-center p-4">
-                <h5>Key Chains</h5>
-                <!-- <span>Designation</span> -->
-              </div>
+                <h5>Security Sticker </h5>
+        <!-- <span>Designation</span> -->
+        </div>
               <div class="team-text text-center bg-white p-4">
-                <h5>Key Chains</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Key Chain')">Order Now</button>
+                <h5>Security Sticker </h5>
+        <!-- <p>Designation</p> -->
+        <div class="d-flex justify-content-center">
+                  <button class="categoryButton btn btn-warning">Order Now</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Promotional/mugg.jpg" alt="" />
+              <img class="img-fluid" src="img/Jpeg/Sticker & Labels/Paper Sticker Print with Die Cut.jpg" alt="" />
               <div class="text-center p-4">
-                <h5>Mug</h5>
-                <!-- <span>Designation</span> -->
-              </div>
+                <h5>Paper Sticker Print with Die Cutt </h5>
+        <!-- <span>Designation</span> -->
+        </div>
               <div class="team-text text-center bg-white p-4">
-                <h5>Mug </h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Mug')">Order Now</button>
+                <h5>Paper Sticker Print with Die Cutt </h5>
+        <!-- <p>Designation</p> -->
+        <div class="d-flex justify-content-center">
+                  <button class="categoryButton btn btn-warning">Order Now</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Promotional/pen.jpg">
-              <div class="text-center p-4">
-                <h5>Pen</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Pen</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Pen')">Order Now</button>
+        </div> 
+      </div>
+        <div class="team-wrapper" id="promotional">
+          <div style="max-width: 500px">
+            <h1 class="display-6 mb-5">Promotional</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Promotional/Bottilee.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Drinkware</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Drinkware</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Drinkware')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Promotional/T-Shirtt.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>T-Shirt</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>T-Shirt</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Pen')">Order Now</button>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Promotional/cap.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Caps</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Caps</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Caps')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Promotional/USB.jpg">
-              <div class="text-center p-4">
-                <h5>USB</h5>
-                <!-- <span>Designation</span> -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Promotional/Key-chain-copy.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Key Chains</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Key Chains</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Key Chain')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>USB</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('USB')">Order Now</button>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Promotional/mugg.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Mug</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Mug</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Mug')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Promotional/Anti Stress Ball & Cubs.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Anti Stress Ball & Cubs</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Anti Stress Ball & Cubs</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Anti Stress Ball & Cubs')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img class="img-fluid" src="img/Jpeg/Promotional/pen.jpg" />
+                <div class="text-center p-4">
+                  <h5>Pen</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Pen</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Pen')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Promotional/T-Shirtt.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>T-Shirt</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>T-Shirt</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Pen')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img class="img-fluid" src="img/Jpeg/Promotional/USB.jpg" />
+                <div class="text-center p-4">
+                  <h5>USB</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>USB</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('USB')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Promotional/Car Sunshades.jpg"
+                />
+                <div class="text-center p-4">
+                  <h5>Sunshades</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Sunshades</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Sunshades')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-      </div>
-
-      <div class="team-wrapper" id="marketing">
-        <div style="max-width: 500px">
-          <h1 class="display-6 mb-5">Brochure</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Brochure/Company-Profile.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Company Profile</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Company Profile</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Company Profile')">Order
-                    Now</button>
+        <div class="team-wrapper" id="marketing">
+          <div style="max-width: 500px">
+            <h1 class="display-6 mb-5">Leaflet & Brochure</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Leaflet & Brochure/Company-Profile.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Company Profile</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Company Profile</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Company Profile')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Brochure/Menucard-copy.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Menu Card</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Menu Card</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Menu Card')">Order Now</button>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Leaflet & Brochure/Restaurant Menu.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Restaurant Menu</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Restaurant Menu</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Restaurant Menu')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Brochure/Cataloque-copy.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Catalog</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Catalog</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Catalog')">Order Now</button>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Leaflet & Brochure/Cataloque.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Catalog</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Catalog</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Catalog')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Brochure/File-Folder.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Folding File </h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Folding File </h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Folding File')">Order Now</button>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Leaflet & Brochure/Folding File.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Folding File</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Folding File</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Folding File')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="team-wrapper" id="badge">
-        <div style="max-width: 100%">
-          <h1 class="display-6 mb-5">Corporate ID Card & Badges</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Id Card & Badges/ID.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Staff ID Card with Lanyard</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Staff ID Card with Lanyard</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Staff id card with lanyard')">Order
-                    Now</button>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Leaflet & Brochure/Flyer A4-A5.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Flyer (A4/A5)</h5>
+                  <!-- <span>Designation</span> -->
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Id Card & Badges/Badge.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Staff Badge with Lanyard</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Staff Badge with Lanyard</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Saff badge with lanyard')">Order
-                    Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Id Card & Badges/Badge-copy.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Events Badges with Lanyard</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Events Badges with Lanyard</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Events badge with lanyard')">Order
-                    Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="team-wrapper" id="bag">
-        <div style="max-width: 500px">
-          <h1 class="display-6 mb-5">Bags</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" style="width:100% ; height: 300px;"
-                src="img/Jpeg/Paper Bag/kelly-sikkema-1Pgq9ZpIatI-unsplash.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Shopping Bag</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Shopping Bag</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Shopping Bag')">Order Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Paper Bag/bag.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Craft paper Bag</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Craft paper Bag</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Craft paper Bag')">Order
-                    Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Paper Bag/bag-copy.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Plastic Carry Bag</h5>
-                <!-- <span>Designation</span> -->
-              </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Plastic Carry Bag</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Plastic Carry Bag')">Order
-                    Now</button>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Flyer (A4/A5)</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Flyer (A4/A5)')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="team-wrapper">
-        <div style="max-width: 500px">
-          <h1 class="display-6 mb-5">Advertising Flags</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Flag/Flag-copy.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Out door Flags</h5>
-                <!-- <span>Designation</span> -->
+        <div class="team-wrapper" id="badge">
+          <div style="max-width: 100%">
+            <h1 class="display-6 mb-5">Corporate ID Card & Badges</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Id Card & Badges/ID.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Staff ID Card with Lanyard</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Staff ID Card with Lanyard</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Staff id card with lanyard')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Out door Flags</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Out door Flags')">Order
-                    Now</button>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Id Card & Badges/Pin Badges.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Pin Badges</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Pin Badges</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Pin Badges')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Id Card & Badges/Event Badge with Lanyard.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Events Badges with Lanyard</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Events Badges with Lanyard</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Events badge with lanyard')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Id Card & Badges/Event Guest Badge.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Event Guest Badges</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Event Guest Badges</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Event Guest Badgesd')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Id Card & Badges/Pocket Badge with Magnet.jpg "
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Pocket Badges with Magnet</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Pocket Badges with Magnet</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Pocket Badges with Magnet')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Flag/Flag.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Indoor Flags</h5>
-                <!-- <span>Designation</span> -->
+        </div>
+        <div class="team-wrapper" id="bag">
+          <div style="max-width: 500px">
+            <h1 class="display-6 mb-5">Shopping bags</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  style="width: 100%; height: 300px"
+                  src="img/Jpeg/Shopping Bag/Craft Paper Bag.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Craft paper Bag</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Craft paper Bag</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Craft paper Bag')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Indoor Flags</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Indoor Flags')">Order Now</button>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Shopping Bag/Plastic Carry Bag.jpg  "
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Plastic Carry Bag</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Plastic Carry Bag</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Plastic Carry Bag')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Shopping Bag/Paper Bag.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Paper Bag</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Paper Bag</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Paper Bag')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="team-wrapper">
-        <div style="max-width: 500px">
-          <h1 class="display-6 mb-5">Paper Box</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Paper Box/Box-copy.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Parcel Box </h5>
-                <!-- <span>Designation</span> -->
+        <div class="team-wrapper">
+          <div style="max-width: 500px">
+            <h1 class="display-6 mb-5">Advertising Flags</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Flag/Flag-copy.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Out door Flags</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Out door Flags</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Out door Flags')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Parcel Box </h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Parcel Box ')">Order Now</button>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img class="img-fluid" src="img/Jpeg/Flag/Flag.jpg" alt="" />
+                <div class="text-center p-4">
+                  <h5>Indoor Flags</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Indoor Flags</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Indoor Flags')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/Jpeg/Paper Box/Paper-Box.jpg" alt="" />
-              <div class="text-center p-4">
-                <h5>Perfume Box</h5>
-                <!-- <span>Designation</span> -->
+        </div>
+        <div class="team-wrapper">
+          <div style="max-width: 500px">
+            <h1 class="display-6 mb-5">Customized Box</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Paper Box/Box-copy.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Parcel Box</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Parcel Box</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Parcel Box ')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="team-text text-center bg-white p-4">
-                <h5>Perfume Box</h5>
-                <!-- <p>Designation</p> -->
-                <div class="d-flex justify-content-center">
-                  <button class="categoryButton btn btn-warning" onclick="orderItem('Perfume Box')">Order Now</button>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Customized Box/Perfume Box.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Perfume Box</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Perfume Box</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Perfume Box')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Customized Box/Burger Box.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Burger Box</h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Burger Box</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Burger Box')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded">
+                <img
+                  class="img-fluid"
+                  src="img/Jpeg/Customized Box/Paper Tea Cup.jpg"
+                  alt=""
+                />
+                <div class="text-center p-4">
+                  <h5>Paper Tea Cup/h5>
+                  <!-- <span>Designation</span> -->
+                </div>
+                <div class="team-text text-center bg-white p-4">
+                  <h5>Paper Tea Cup</h5>
+                  <!-- <p>Designation</p> -->
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="categoryButton btn btn-warning"
+                      onclick="orderItem('Paper Tea Cup')"
+                    >
+                      Order Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -716,37 +1152,60 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- Team End -->
+    <!-- Team End -->
 
-  <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container-xxl py-5">
-      <div class="row g-5 d-flex justify-content-center">
-        <div class="col-lg-4 col-md-6 ms-0">
-          <div class="text-white mb-4 footer-img-wrapper">
-            <img class="img-fluid ms-0 footer-img" src="img/Web site name.png" alt="" />
-          </div>
-          <!-- <p>
+    <div
+      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container-xxl py-5">
+        <div class="row g-5 d-flex justify-content-center">
+          <div class="col-lg-4 col-md-6 ms-0">
+            <div class="text-white mb-4 footer-img-wrapper">
+              <img
+                class="img-fluid ms-0 footer-img"
+                src="img/Web site name.png"
+                alt=""
+              />
+            </div>
+            <!-- <p>
               Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
               ipsum et lorem et sit, sed stet lorem sit clita
             </p> -->
             <div class="d-flex pt-2 d-flex justify-content-center">
-              <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-square me-1" href="https://www.facebook.com/profile.php?id=100064062731948"><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-square me-1" href="https://www.instagram.com/hudhudadvt/?hl=en"><i class="fab fa-instagram"></i></a>
-              <a class="btn btn-square me-0" href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square me-1"
+                href="https://www.facebook.com/profile.php?id=100064062731948"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square me-1"
+                href="https://www.instagram.com/hudhudadvt/?hl=en"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square me-0"
+                href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-light mb-4">Address</h5>
-          <p>
-            <i class="fa fa-map-marker-alt me-3"></i>Opp. Gold Souq Metro Station, Al Khaleej Road, Deira - Dubai - UAE
-          </p>
-          <p><span class="me-3">&#x260E;</span>+971 4 2724898 / +971 4 2724899</p>
-          <p><i class="fa fa-phone-alt me-3"></i>+971 55 930 55 56</p>
-          <p><i class="fa fa-envelope me-3"></i>hudhudad2010@gmail.com</p>
-        </div>
-        <!-- <div class="col-lg-3 col-md-6">
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>Opp. Gold Souq Metro
+              Station, Al Khaleej Road, Deira - Dubai - UAE
+            </p>
+            <p>
+              <span class="me-3">&#x260E;</span>+971 4 2724898 / +971 4 2724899
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>+971 55 930 55 56</p>
+            <p><i class="fa fa-envelope me-3"></i>hudhudad2010@gmail.com</p>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Quick Links</h5>
             <a class="btn btn-link" href="index.html">Home</a>
             <a class="btn btn-link" href="about.html">About Us</a>
@@ -755,51 +1214,66 @@
             <a class="btn btn-link" href="portfolio.html">Portfolio</a>
   
           </div> -->
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-light mb-4">Newsletter</h5>
-          <p>Subscribe your email and you will get the latest notification.</p>
-          <div class="position-relative mx-auto" style="max-width: 400px">
-            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-            <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">
-              SignUp
-            </button>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-light mb-4">Newsletter</h5>
+            <p>
+              Subscribe your email and you will get the latest notification.
+            </p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">HudHud</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By
+              <a href="https://voltixsolution.com">voltix solution</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <a href="#">HudHud</a>, All Right Reserved.
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            Designed By <a href="https://voltixsolution.com">voltix solution</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Back to Top -->
-  <a class="btn btn-lg btn-success btn-lg-square whatsapp-icon"
-    href="//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=Can you explain about your services"><i
-      class="bi bi-whatsapp"></i></a>
-  <a class="btn btn-lg btn-success btn-lg-square phone-icon" onclick="goToPhone()"><i class="bi bi-telephone"></i></a>
+    <!-- Back to Top -->
+    <a
+      class="btn btn-lg btn-success btn-lg-square whatsapp-icon"
+      href="//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=Can you explain about your services"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <a
+      class="btn btn-lg btn-success btn-lg-square phone-icon"
+      onclick="goToPhone()"
+      ><i class="bi bi-telephone"></i
+    ></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
 
-  <!-- Template Javascript -->
-  <script src="js/main.js"></script>
-</body>
-
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
