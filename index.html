@@ -1,119 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AL HUD HUD - best printing company</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>AL HUD HUD - best printing company</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="keywords" />
-  <meta content="" name="description" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
-    rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/Logo Jpeg.jpg" />
 
-  <!-- Libraries Stylesheet -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-<link rel="icon" type="image/x-icon" href="/img/Logo Jpeg.jpg">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Stylesheet -->
-  <link href="css/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- Spinner Start -->
-  <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-grow text-primary" role="status"></div>
-  </div>
-  <!-- Spinner End -->
-
-  <!-- Topbar Start -->
-  <div class="container-fluid top-container text-white py-2 px-0 d-none d-lg-block">
-    <div class="row gx-0 align-items-center">
-      <div class="col-lg-7 px-5 text-start">
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="fa fa-phone-alt me-2"></small>
-          <small class="topHeaderCall" onclick="goToPhone()">+971 55 930 55 56</small>
-        </div>
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="far fa-envelope-open me-2"></small>
-          <small class="topHeaderCall" onclick="goToMail()">hudhudad2010@gmail.com</small>
-        </div>
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="far fa-clock me-2"></small>
-          <small>Mon - Sat : 09 AM to 02 PM - 4 PM to 10 PM </small>
-        </div>
-      </div>
-      <div class="col-lg-5 px-5 text-end">
-        <div class="h-100 d-inline-flex align-items-center">
-          <a class="text-white ms-4" href="https://www.facebook.com/profile.php?id=100064062731948"><i class="fab fa-facebook-f"></i></a>
-          <a class="text-white ms-4" href=""><i class="fab fa-twitter"></i></a>
-          <a class="text-white ms-4" href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"><i class="fab fa-linkedin-in"></i></a>
-          <a class="text-white ms-4" href="https://www.instagram.com/hudhudadvt/?hl=en"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
     </div>
-  </div>
-  <!-- Topbar End -->
+    <!-- Spinner End -->
 
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4">
-    <a href="index.html" class="navbar-brand d-flex align-items-center">
-
-      <img class="img-fluid me-0 animate__bounceIn" src="img/Web site name.png" alt="" />
-    </a>
-    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-        <a href="index.html" class="nav-item nav-link active">Home</a>
-        <a href="about.html" class="nav-item nav-link">About Us</a>
-        <a href="service.html" class="nav-item nav-link">Our Services</a>
-        <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-        <div class="nav-item dropdown">
-          <a href="category.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</a>
-          <div class="dropdown-menu bg-light border-0 m-0">
-            <a href="category.html#business" class="dropdown-item">Business Card</a>
-            <a href="category.html#marketing" class="dropdown-item">Marketing Materials</a>
-            <a href="category.html#badge" class="dropdown-item">Signs & Banners</a>
-            <a href="category.html#promotional" class="dropdown-item">Gifts & Decor</a>
-            <a href="category.html#bag" class="dropdown-item">Stationery</a>
+    <!-- Topbar Start -->
+    <div
+      class="container-fluid top-container text-white py-2 px-0 d-none d-lg-block"
+    >
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-phone-alt me-2"></small>
+            <small class="topHeaderCall" onclick="goToPhone()"
+              >+971 55 930 55 56</small
+            >
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="far fa-envelope-open me-2"></small>
+            <small class="topHeaderCall" onclick="goToMail()"
+              >hudhudad2010@gmail.com</small
+            >
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="far fa-clock me-2"></small>
+            <small>Mon - Sat : 09 AM to 02 PM - 4 PM to 10 PM </small>
           </div>
         </div>
-        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center">
+            <a
+              class="text-white ms-4"
+              href="https://www.facebook.com/profile.php?id=100064062731948"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="text-white ms-4" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="text-white ms-4"
+              href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="text-white ms-4"
+              href="https://www.instagram.com/hudhudadvt/?hl=en"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
-    <img src="img/Web site Color Design.png" class="right-logo d-none d-lg-block">
-  </nav>
-  <!-- Navbar End -->
+    <!-- Topbar End -->
 
-  <!-- Carousel Start -->
-  <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="w-100" src="img/Front Banner 1.jpg" alt="Image" />
-          <!-- <div class="carousel-caption">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img
+          class="img-fluid me-0 animate__bounceIn"
+          src="img/Web site name.png"
+          alt=""
+        />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Our Services</a>
+          <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+          <div class="nav-item dropdown">
+            <a
+              href="category.html"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Category</a
+            >
+            <div class="dropdown-menu bg-light border-0 m-0">
+              <a href="category.html#business" class="dropdown-item"
+                >Business Card</a
+              >
+              <a href="category.html#marketing" class="dropdown-item"
+                >Marketing Materials</a
+              >
+              <a href="category.html#badge" class="dropdown-item"
+                >Signs & Banners</a
+              >
+              <a href="category.html#promotional" class="dropdown-item"
+                >Gifts & Decor</a
+              >
+              <a href="category.html#bag" class="dropdown-item">Stationery</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+      </div>
+      <img
+        src="img/Web site Color Design.png"
+        class="right-logo d-none d-lg-block"
+      />
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="img/Front Banner 1.jpg" alt="Image" />
+            <!-- <div class="carousel-caption">
               <div class="container">
                 <div class="row">
                   <div class="col-12 col-lg-6">
@@ -131,10 +184,10 @@
                 </div>
               </div>
             </div> -->
-        </div>
-        <div class="carousel-item">
-          <img class="w-100" src="img/Front Banner 2.jpg" alt="Image" />
-          <!-- <div class="carousel-caption">
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/Front Banner 2.jpg" alt="Image" />
+            <!-- <div class="carousel-caption">
               <div class="container">
                 <div class="row">
                   <div class="col-12 col-lg-6">
@@ -152,10 +205,10 @@
                 </div>
               </div>
             </div> -->
-        </div>
-        <div class="carousel-item">
-          <img class="w-100" src="img/Front Banner 3.jpg" alt="Image" />
-          <!-- <div class="carousel-caption">
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/Front Banner 3.jpg" alt="Image" />
+            <!-- <div class="carousel-caption">
               <div class="container">
                 <div class="row">
                   <div class="col-12 col-lg-6">
@@ -173,149 +226,219 @@
                 </div>
               </div>
             </div> -->
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  </div>
-  <!-- Carousel End -->
+    <!-- Carousel End -->
 
-  <!-- our services start -->
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="text-center mx-auto" style="max-width: 500px">
-        <h1 class="display-6 mb-5">
-          Our Services
-        </h1>
-      </div>
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-4 col-md-6 wow fadeInUp serviceWrapper" data-wow-delay="0.1s">
-          <div class="service-item rounded h-100 p-5">
-            <div class="d-flex align-items-center ms-n5 mb-4">
-              <div class="service-icon flex-shrink-0 bg-light rounded-end me-4">
-                <img class="img-fluid" src="img/icon/web-design.png" alt="" />
+    <!-- our services start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+          <h1 class="display-6 mb-5">Our Services</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-lg-4 col-md-6 wow fadeInUp serviceWrapper"
+            data-wow-delay="0.1s"
+          >
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-light rounded-end me-4"
+                >
+                  <img class="img-fluid" src="img/icon/web-design.png" alt="" />
+                </div>
+                <h4 class="mb-0 text-white">Design</h4>
               </div>
-              <h4 class="mb-0 text-white">Design</h4>
+              <p class="mb-4 text-white">
+                We do Design, Visual Identity Packages, Business Cards,
+                Brochures, Catalogs. Marketing Materials.
+              </p>
+              <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
             </div>
-            <p class="mb-4 text-white">
-              We do Design, Visual Identity Packages, Business Cards, Brochures, Catalogs. Marketing Materials.
-            </p>
-            <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="service-item rounded h-100 p-5">
-            <div class="d-flex align-items-center ms-n5 mb-4">
-              <div class="service-icon flex-shrink-0 bg-light rounded-end me-4">
-                <img class="img-fluid" src="img/icon/printer-icon-998.png" alt="" />
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-light rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/printer-icon-998.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0 text-white">Printing</h4>
               </div>
-              <h4 class="mb-0 text-white">Printing</h4>
+              <p class="mb-4 text-white">
+                We are engaged in offering Printing Wall Graphics Services to
+                our esteemed customers.
+              </p>
+              <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
             </div>
-            <p class="mb-4 text-white">
-              We are engaged in offering Printing Wall Graphics Services to our esteemed customers.
-            </p>
-            <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="service-item rounded h-100 p-5">
-            <div class="d-flex align-items-center ms-n5 mb-4">
-              <div class="service-icon flex-shrink-0 bg-light rounded-end me-4">
-                <img class="img-fluid" src="img/icon/mobile-marketing-icon.png" alt="" />
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-light rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/mobile-marketing-icon.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0 text-white">Marketing</h4>
               </div>
-              <h4 class="mb-0 text-white">Marketing</h4>
+              <p class="mb-4 text-white">
+                We are expert which specializes in creating brands as well as
+                rebranding and other forms of promotion.
+              </p>
+              <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
             </div>
-            <p class="mb-4 text-white">
-              We are expert which specializes in creating brands as well as rebranding and other forms of promotion.
-            </p>
-            <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- our services end -->
+    <!-- our services end -->
 
-  <!-- shop by category -->
-  <div class="categoryWrapper py-5">
-    <div class="categroyHeader d-flex justify-content-center">
-      <h2 class="display-6 mb-5">Shop By Category</h2>
+    <!-- shop by category -->
+    <div class="categoryWrapper py-5">
+      <div class="categroyHeader d-flex justify-content-center">
+        <h2 class="display-6 mb-5">Shop By Category</h2>
+      </div>
+      <div class="d-flex justify-content-center gap-1 row m-4">
+        <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div
+            class="rounded h-100 p-4 category-item"
+            onclick="redirectToCategory('business')"
+          >
+            <div class="categoryImageWrapper">
+              <img
+                class="categoryImage"
+                src="img/Jpeg/Businesscard/UV-Coated.jpg"
+                alt=""
+              />
+            </div>
+            <div class="categoryTextWrapper">
+              <a>
+                <p class="categoryText" style="font-weight: 500">
+                  Businesses Card
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div
+            class="rounded h-100 p-4 category-item"
+            onclick="redirectToCategory('marketing')"
+          >
+            <div class="categoryImageWrapper">
+              <img
+                class="categoryImage"
+                src="img/Jpeg/Brochure/File-Folder-copy.jpg"
+                alt=""
+              />
+            </div>
+            <div class="categoryTextWrapper">
+              <a>
+                <p class="categoryText" style="font-weight: 500">
+                  Marketing Materials
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div
+            class="rounded h-100 p-4 category-item"
+            onclick="redirectToCategory('badge')"
+          >
+            <div class="categoryImageWrapper">
+              <img
+                class="categoryImage"
+                src="img/Jpeg/Id Card & Badges/ID-copy.jpg"
+                alt=""
+              />
+            </div>
+            <div class="categoryTextWrapper">
+              <a>
+                <p class="categoryText" style="font-weight: 500">
+                  Signs & Banners
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div
+            class="rounded h-100 p-4 category-item"
+            onclick="redirectToCategory('promotional')"
+          >
+            <div class="categoryImageWrapper">
+              <img
+                class="categoryImage"
+                src="img/Jpeg/Paper Bag/bag-copy.jpg"
+                alt=""
+              />
+            </div>
+            <div class="categoryTextWrapper">
+              <a>
+                <p class="categoryText" style="font-weight: 500">
+                  Gifts & Decor
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div
+            class="rounded h-100 p-4 category-item"
+            onclick="redirectToCategory('bag')"
+          >
+            <div class="categoryImageWrapper">
+              <img
+                class="categoryImage"
+                src="img/Jpeg/Promotional/pen-copy.jpg"
+                alt=""
+              />
+            </div>
+            <div class="categoryTextWrapper">
+              <a>
+                <p class="categoryText" style="font-weight: 500">Stationery</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="d-flex justify-content-center gap-1 row m-4">
-      <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="rounded h-100 p-4 category-item" onclick="redirectToCategory('business')">
-          <div class="categoryImageWrapper">
-            <img class="categoryImage" src="img/Jpeg/Businesscard/UV-Coated.jpg" alt="">
-          </div>
-          <div class="categoryTextWrapper">
-            <a>
-              <p class="categoryText" style="font-weight: 500">Businesses Card</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="rounded h-100 p-4 category-item" onclick="redirectToCategory('marketing')">
-          <div class="categoryImageWrapper">
-            <img class="categoryImage" src="img/Jpeg/Brochure/File-Folder-copy.jpg" alt="">
-          </div>
-          <div class="categoryTextWrapper">
-            <a >
-              <p class="categoryText" style="font-weight: 500">Marketing Materials</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="rounded h-100 p-4 category-item" onclick="redirectToCategory('badge')">
-          <div class="categoryImageWrapper">
-            <img class="categoryImage" src="img/Jpeg/Id Card & Badges/ID-copy.jpg" alt="">
-          </div>
-          <div class="categoryTextWrapper">
-            <a>
-              <p class="categoryText" style="font-weight: 500">Signs & Banners</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="rounded h-100 p-4 category-item" onclick="redirectToCategory('promotional')">
-          <div class="categoryImageWrapper">
-            <img class="categoryImage" src="img/Jpeg/Paper Bag/bag-copy.jpg" alt="">
-          </div>
-          <div class="categoryTextWrapper">
-            <a>
-              <p class="categoryText" style="font-weight: 500">Gifts & Decor</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="rounded h-100 p-4 category-item" onclick="redirectToCategory('bag')">
-          <div class="categoryImageWrapper">
-            <img class="categoryImage" src="img/Jpeg/Promotional/pen-copy.jpg" alt="">
-          </div>
-          <div class="categoryTextWrapper">
-            <a>
-              <p class="categoryText" style="font-weight: 500">Stationery</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- shop by category end -->
-  <!-- About Start -->
-  <!-- <div class="container-xxl py-5">
+    <!-- shop by category end -->
+    <!-- About Start -->
+    <!-- <div class="container-xxl py-5">
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -369,33 +492,36 @@
       </div>
     </div>
   </div> -->
-  <!-- About End -->
+    <!-- About End -->
 
-  <!-- Facts Start -->
-  <div class="container-fluid overflow-hidden my-5 px-lg-0">
-    <div class="container facts px-lg-0">
-      <div class="row g-0 mx-lg-0">
-        <div class="col-lg-6 facts-text wow fadeIn" data-wow-delay="0.1s">
-          <div class="h-100 px-4 ps-lg-0">
-            <h1 class="text-white mb-4">For Individuals And Organisations</h1>
-            <p class="text-light mb-5">
-              We are offered Printing Services, Installation Services, manufacturer and trader of Signages & Graphics.
-            </p>
-            <a href="" class="align-self-start btn btn-secondary py-3 px-5">More Details</a>
+    <!-- Facts Start -->
+    <div class="container-fluid overflow-hidden my-5 px-lg-0">
+      <div class="container facts px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 facts-text wow fadeIn" data-wow-delay="0.1s">
+            <div class="h-100 px-4 ps-lg-0">
+              <h1 class="text-white mb-4">For Individuals And Organisations</h1>
+              <p class="text-light mb-5">
+                We are offered Printing Services, Installation Services,
+                manufacturer and trader of Signages & Graphics.
+              </p>
+              <a href="" class="align-self-start btn btn-secondary py-3 px-5"
+                >More Details</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="col-lg-6 facts-counter wow fadeIn" data-wow-delay="0.5s">
-          <div class="h-100 px-4 pe-lg-0">
-            <div class="row g-5">
-              <div class="col-sm-6">
-                <h1 class="display-5" data-toggle="counter-up">1234</h1>
-                <p class="fs-5 text-primary">Happy Clients</p>
-              </div>
-              <div class="col-sm-6">
-                <h1 class="display-5" data-toggle="counter-up">1234</h1>
-                <p class="fs-5 text-primary">Projects Succeed</p>
-              </div>
-              <!-- <div class="col-sm-6">
+          <div class="col-lg-6 facts-counter wow fadeIn" data-wow-delay="0.5s">
+            <div class="h-100 px-4 pe-lg-0">
+              <div class="row g-5">
+                <div class="col-sm-6">
+                  <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                  <p class="fs-5 text-primary">Happy Clients</p>
+                </div>
+                <div class="col-sm-6">
+                  <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                  <p class="fs-5 text-primary">Projects Succeed</p>
+                </div>
+                <!-- <div class="col-sm-6">
                 <h1 class="display-5" data-toggle="counter-up">1234</h1>
                 <p class="fs-5 text-primary">Awards Achieved</p>
               </div>
@@ -403,70 +529,103 @@
                 <h1 class="display-5" data-toggle="counter-up">1234</h1>
                 <p class="fs-5 text-primary">Team Members</p>
               </div> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Facts End -->
+    <!-- Facts End -->
 
-  <!-- Features Start -->
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <h1 class="display-6 mb-5">Few Reasons Why People Choosing Us!</h1>
-          <p class="mb-4">
-            We offer an all inclusive array of services for today’s business needs.
-          </p>
-          <div class="row g-3">
-            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="bg-light rounded h-100 p-3">
-                <div class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3">
-                  <img class="align-self-center mb-3" src="img/icon/icon-06-primary.png" alt="" />
-                  <h5 class="mb-0">Branding</h5>
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="display-6 mb-5">Few Reasons Why People Choosing Us!</h1>
+            <p class="mb-4">
+              We offer an all inclusive array of services for today’s business
+              needs.
+            </p>
+            <div class="row g-3">
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-06-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Branding</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-              <div class="bg-light rounded h-100 p-3">
-                <div class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3">
-                  <img class="align-self-center mb-3" src="img/icon/icon-03-primary.png" alt="" />
-                  <h5 class="mb-0">Premium Quality</h5>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-03-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Premium Quality</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-              <div class="bg-light rounded h-100 p-3">
-                <div class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3">
-                  <img class="align-self-center mb-3" src="img/icon/icon-04-primary.png" alt="" />
-                  <h5 class="mb-0">Life Time Support</h5>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-04-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Life Time Support</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-              <div class="bg-light rounded h-100 p-3">
-                <div class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3">
-                  <img class="align-self-center mb-3" src="img/icon/icon-07-primary.png" alt="" />
-                  <h5 class="mb-0">Money Saving</h5>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-07-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Money Saving</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px">
-            <img class="position-absolute w-100 h-100" src="img/Why-Chose.jpg" alt="" style="object-fit: cover" />
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              class="position-relative rounded overflow-hidden h-100"
+              style="min-height: 400px"
+            >
+              <img
+                class="position-absolute w-100 h-100"
+                src="img/Why-Chose.jpg"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Features End -->
+    <!-- Features End -->
 
-  <!-- Service Start -->
-  <!-- <div class="container-xxl py-5">
+    <!-- Service Start -->
+    <!-- <div class="container-xxl py-5">
     <div class="container">
       <div class="text-center mx-auto" style="max-width: 500px">
         <h1 class="display-6 mb-5">
@@ -489,8 +648,8 @@
               Stress Ball,
               Wrist Band, Balloon Branding
             </p> -->
-  <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
-  <!-- </div>
+    <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
+    <!-- </div>
         </div>
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
           <div class="service-item rounded h-100 p-5">
@@ -503,8 +662,8 @@
             <p class="mb-4">
               Business Card, Booklet, Leaflet, Menu and Catalogue
             </p> -->
-  <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
-  <!-- </div>
+    <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
+    <!-- </div>
         </div>
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
           <div class="service-item rounded h-100 p-5">
@@ -519,8 +678,8 @@
               Menu,
               Catalogue, Diary and Note Books
             </p> -->
-  <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
-  <!-- </div>
+    <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
+    <!-- </div>
         </div>
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div class="service-item rounded h-100 p-5">
@@ -535,8 +694,8 @@
               Making,
               Vehicle Graphics
             </p> -->
-  <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
-  <!-- </div>
+    <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
+    <!-- </div>
         </div>
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
           <div class="service-item rounded h-100 p-5">
@@ -551,8 +710,8 @@
               Acrylic Hanging Boards,
               Signplast Sticker works, Vinyle Sticker Print with Fixing and All items Signage works
             </p> -->
-  <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
-  <!-- </div>
+    <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
+    <!-- </div>
         </div>
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
           <div class="service-item rounded h-100 p-5">
@@ -565,16 +724,16 @@
             <p class="mb-4">
               Etching, Engraving, Embossing, Foiling and UV Coating, Embroidery Workds
             </p> -->
-  <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
-  <!-- </div>
+    <!-- <a class="btn btn-light px-3" href="">Read More</a> -->
+    <!-- </div>
         </div>
       </div>
     </div>
   </div> -->
-  <!-- Service End -->
+    <!-- Service End -->
 
-  <!-- Appointment Start -->
-  <!-- <div class="container-fluid appointment my-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <!-- Appointment Start -->
+    <!-- <div class="container-fluid appointment my-5 py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
       <div class="row g-5">
         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
@@ -642,10 +801,10 @@
       </div>
     </div>
   </div> -->
-  <!-- Appointment End -->
+    <!-- Appointment End -->
 
-  <!-- Team Start -->
-  <!-- <div class="container-xxl py-5">
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5">
     <div class="container">
       <div class="text-center mx-auto" style="max-width: 500px">
         <h1 class="display-6 mb-5">Meet Our Professional Team Members</h1>
@@ -730,145 +889,304 @@
       </div>
     </div>
   </div> -->
-  <!-- Team End -->
+    <!-- Team End -->
 
-  <!-- Testimonial Start -->
-  <div class="container-xxl py-5 mt-5">
-    <div class="container">
-      <div class="text-center mx-auto" style="max-width: 100%">
-        <h1 class="display-6 mb-5">What They Say About Our Company</h1>
-      </div>
-      <div class="row g-5 d-flex justify-content-center">
-        <!-- <div class="col-lg-3 d-none d-lg-block">
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 mt-5">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 100%">
+          <h1 class="display-6 mb-5">What They Say About Our Company</h1>
+        </div>
+        <div class="row g-5 d-flex justify-content-center">
+          <!-- <div class="col-lg-3 d-none d-lg-block">
           <div class="testimonial-left h-100">
             <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="" />
             <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="" />
             <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="" />
           </div>
         </div> -->
-        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-          <div class="owl-carousel testimonial-carousel">
-            <div class="testimonial-item text-center">
-              <img class="img-fluid rounded mx-auto mb-4" src="img/testimonial-1.jpg" alt="" />
-              <p class="fs-5">
-                Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                et labore et tempor diam tempor erat.
-              </p>
-              <h5>Client Name</h5>
-              <span>Profession</span>
-            </div>
-            <div class="testimonial-item text-center">
-              <img class="img-fluid rounded mx-auto mb-4" src="img/testimonial-2.jpg" alt="" />
-              <p class="fs-5">
-                Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                et labore et tempor diam tempor erat.
-              </p>
-              <h5>Client Name</h5>
-              <span>Profession</span>
-            </div>
-            <div class="testimonial-item text-center">
-              <img class="img-fluid rounded mx-auto mb-4" src="img/testimonial-3.jpg" alt="" />
-              <p class="fs-5">
-                Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                et labore et tempor diam tempor erat.
-              </p>
-              <h5>Client Name</h5>
-              <span>Profession</span>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/mahmood.jpeg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Highly recommended the services at Al Hud Hud Advertising LLC.
+                  Very polite and professional staff who go above and beyond to
+                  satisfy customers. I Ordered business branding items and am
+                  very pleased with the outcome.
+                </p>
+                <h5>Mahmood MOHD. NOOR</h5>
+                <span>(CEO- Victory Contracting LLC)</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/rizwan.jpeg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  We, as Marvel, have been dealing with Al Hud Hud for more than
+                  10 years for all company brochures, receipt books, invoices,
+                  and all other related printing stuff.During all these years,
+                  Hud Hud have been professional, offering good pricing,
+                  providing high standard of quality and outstanding service.
+                </p>
+                <h5>Ali Rizwan</h5>
+                <span>General Manager Marvel Electricals Trading L.L.C</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/yahya.jpeg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Al Hud Hud advertising is a really good company, I have been
+                  using them for over 5 years. The print quality is excellent,
+                  delivery is fast. I can highly recommend this team.
+                </p>
+                <h5>Yahya Saqafi Alappuzha</h5>
+                <span
+                  >(General Secretary - Dubai Markaz & Managing Director of
+                  Zahratul Qur'an - Dubai)</span
+                >
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/ibrahim faizy.jpeg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  I have been dealing with this firm since 2000 and i can say
+                  they are really very helpful and professional since i have a
+                  very good experience. The staff is very sincere and treat the
+                  customers well. Recommended to all the viewers if you are
+                  looking to Print works.
+                </p>
+                <h5>IBRAHIM FAIZY</h5>
+                <span>Principal – Dubai Sunni Centre</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/azeez.jpeg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  I have been dealing with this firm since 2013 and i can say
+                  they are really very helpful and professional since i have a
+                  very good experience. The staff is very sincere and treat the
+                  customers well. Recommended to all the viewers if you are
+                  looking to Print works.
+                </p>
+                <h5>YAZEEZ KAKKERI</h5>
+                <span>Gen. Manger ( Mazmo Environmental Services)</span>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="col-lg-3 d-none d-lg-block">
+          <!-- <div class="col-lg-3 d-none d-lg-block">
           <div class="testimonial-right h-100">
             <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="" />
             <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="" />
             <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="" />
           </div>
         </div> -->
-      </div>
-    </div>
-  </div>
-  <!-- Testimonial End -->
-
-  <section id="clients" class="clients mt-4">
-    <div class="container" data-aos="zoom-out">
-      <!-- <h1 class="text-center"><strong>Our Clients
-          </strong></h1>
-      <br> -->
-      <div class="clients-slider swiper">
-        <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><img src="img/Customer Logo/Ain-GOld.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Air-Best.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Al-Toki.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Amana.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Asly.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Bait-Al-Masel.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Dubai-KMCC.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Edrees-Medical.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Etihad-Auto.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Fast-Track.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Flexy.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Fyor.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Interscience.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/IVK.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Jay-Express.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Jebel-Jaiz.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/KRS-Cargo.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Maraya.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Markaz.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Marvel.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Mazmo.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Menber.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Naif-Trip.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Nicoli.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Oleander.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Oyster-Bay.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Public-Cook.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Smart-Line.jpg" class="img-fluid" alt=""></div> 
-          <div class="swiper-slide"><img src="img/Customer Logo/Strong-Lite.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Sunni-Centre.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Texube.jpg" class="img-fluid" alt=""></div> 
-          <div class="swiper-slide"><img src="img/Customer Logo/Victory.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/Customer Logo/Zahrathul-Quran.jpg" class="img-fluid" alt=""></div>
-
         </div>
       </div>
-
     </div>
-  </section><!-- End Clients Section -->
+    <!-- Testimonial End -->
 
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container-xxl py-5">
-      <div class="row g-5 d-flex justify-content-center">
-        <div class="col-lg-4 col-md-6 ms-0">
-          <div class="text-white mb-4 footer-img-wrapper">
-            <img class="img-fluid ms-0 footer-img" src="img/Web site name.png" alt="" />
+    <section id="clients" class="clients mt-4">
+      <div class="container" data-aos="zoom-out">
+        <!-- <h1 class="text-center"><strong>Our Clients
+          </strong></h1>
+      <br> -->
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/1.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/2.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/3.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/4.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/5.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/6.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/7.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/8.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/9.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/10.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/11.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/12.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/13.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/14.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/15.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/16.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/17.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/18.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/19.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/20.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/21.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/22.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/23.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/24.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/25.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/26.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/27.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/28.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/29.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/30.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/31.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/32.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/33.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/34.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/35.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/36.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/37.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/38.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/39.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Customer Logo/40.jpg" class="img-fluid" alt="" />
+            </div>
           </div>
-          <!-- <p>
+        </div>
+      </div>
+    </section>
+    <!-- End Clients Section -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container-xxl py-5">
+        <div class="row g-5 d-flex justify-content-center">
+          <div class="col-lg-4 col-md-6 ms-0">
+            <div class="text-white mb-4 footer-img-wrapper">
+              <img
+                class="img-fluid ms-0 footer-img"
+                src="img/Web site name.png"
+                alt=""
+              />
+            </div>
+            <!-- <p>
             Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
             ipsum et lorem et sit, sed stet lorem sit clita
           </p> -->
-          <div class="d-flex pt-2 d-flex justify-content-center">
-            <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-square me-1" href="https://www.facebook.com/profile.php?id=100064062731948"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square me-1" href="https://www.instagram.com/hudhudadvt/?hl=en"><i class="fab fa-instagram"></i></a>
-            <a class="btn btn-square me-0" href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"><i class="fab fa-linkedin-in"></i></a>
+            <div class="d-flex pt-2 d-flex justify-content-center">
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square me-1"
+                href="https://www.facebook.com/profile.php?id=100064062731948"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square me-1"
+                href="https://www.instagram.com/hudhudadvt/?hl=en"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square me-0"
+                href="https://www.linkedin.com/company/hudhud-advertising-&-marketing/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-light mb-4">Address</h5>
-          <p>
-            <i class="fa fa-map-marker-alt me-3"></i>Opp. Gold Souq Metro Station, Al Khaleej Road, Deira - Dubai - UAE
-          </p>
-          <p><span class="me-3">&#x260E;</span>+971 4 2724898 / +971 4 2724899</p>
-          <p><i class="fa fa-phone-alt me-3"></i>+971 55 930 55 56</p>
-          <p><i class="fa fa-envelope me-3"></i>hudhudad2010@gmail.com</p>
-          
-        </div>
-        <!-- <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>Opp. Gold Souq Metro
+              Station, Al Khaleej Road, Deira - Dubai - UAE
+            </p>
+            <p>
+              <span class="me-3">&#x260E;</span>+971 4 2724898 / +971 4 2724899
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>+971 55 930 55 56</p>
+            <p><i class="fa fa-envelope me-3"></i>hudhudad2010@gmail.com</p>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
           <h5 class="text-light mb-4">Quick Links</h5>
           <a class="btn btn-link" href="index.html">Home</a>
           <a class="btn btn-link" href="about.html">About Us</a>
@@ -877,90 +1195,102 @@
           <a class="btn btn-link" href="portfolio.html">Portfolio</a>
 
         </div> -->
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-light mb-4">Newsletter</h5>
-          <p>Subscribe your email and you will get the latest notification.</p>
-          <div class="position-relative mx-auto" style="max-width: 400px">
-            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-            <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">
-              SignUp
-            </button>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-light mb-4">Newsletter</h5>
+            <p>
+              Subscribe your email and you will get the latest notification.
+            </p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">HudHud</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By
+              <a href="https://voltixsolution.com">Voltix Solution</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <a href="#">HudHud</a>, All Right Reserved.
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            Designed By <a href="https://voltixsolution.com">Voltix Solution</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Back to Top -->
-  <a class="whatsapp-icon btn btn-lg btn-lg-square"
-    href="//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=Can you explain about your services"><i
-      class="bi bi-whatsapp"></i></a>
-  <a class="phone-icon btn btn-lg btn-lg-square" onclick="goToPhone()"><i class="bi bi-telephone"></i></a>
+    <!-- Back to Top -->
+    <a
+      class="whatsapp-icon btn btn-lg btn-lg-square"
+      href="//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=Can you explain about your services"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <a class="phone-icon btn btn-lg btn-lg-square" onclick="goToPhone()"
+      ><i class="bi bi-telephone"></i
+    ></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Javascript -->
-  <script>
-
-    /**
- * Clients Slider
- */
-    new Swiper('.clients-slider', {
-      speed: 400,
-      loop: true,
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: false
-      },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 40
+    <!-- Template Javascript -->
+    <script>
+      /**
+       * Clients Slider
+       */
+      new Swiper(".clients-slider", {
+        speed: 400,
+        loop: true,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
         },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 60
+        slidesPerView: "auto",
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
         },
-        640: {
-          slidesPerView: 4,
-          spaceBetween: 80
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 80,
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 120,
+          },
         },
-        992: {
-          slidesPerView: 5,
-          spaceBetween: 120
-        }
-      }
-    });
-  </script>
-  <script src="js/main.js"></script>
-</body>
-
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
