@@ -874,8 +874,6 @@
   
   .clients .swiper-slide img {
     transition: 0.3s;
-    height: 4rem;
-    width: 50%;
   }
   
   .clients .swiper-slide img:hover {
