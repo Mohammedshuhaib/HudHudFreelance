@@ -99,10 +99,11 @@ function sendMail() {
         fetch("https://voltix-email-service.onrender.com/sendmail", {
             method: "POST",
             body: JSON.stringify({
+                name: document.getElementById("name").value,
                 from: document.getElementById("email").value,
                 to: 'hudhudad2010@gmail.com',
                 subject: document.getElementById("subject").value,
-                message: `name: ${document.getElementById("name").value}, email: ${document.getElementById("email").value} , message: ${document.getElementById("message").value}`
+                message: document.getElementById("message").value
             }),
             headers: {
                 "Content-Type": "application/json"
