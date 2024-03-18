@@ -82,7 +82,7 @@ function redirectToCategory(route) {
 }
 
 function goToPhone() {
-    window.open('tel:+971559305556')
+    window.open('tel:+971508601599')
 }
 
 function goToMail() {
@@ -90,7 +90,7 @@ function goToMail() {
 }
 
 function goToWhatsapp() {
-    window.open("//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=Can you explain about your services")
+    window.open("//api.whatsapp.com/send?phone=+971508601599MOBILE_NUMBER&text=Can you explain about your services")
 }
 
 
@@ -139,7 +139,7 @@ function sendMail() {
 
 function orderItem(ItemName) {
     console.log(ItemName)
-    window.open(`//api.whatsapp.com/send?phone=+971559305556MOBILE_NUMBER&text=I need a ${ItemName}, Can i get the details?`)
+    window.open(`//api.whatsapp.com/send?phone=+971508601599MOBILE_NUMBER&text=I need a ${ItemName}, Can i get the details?`)
 }
 
 
